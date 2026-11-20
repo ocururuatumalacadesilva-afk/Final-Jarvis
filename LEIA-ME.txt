@@ -1,0 +1,22 @@
+J.A.R.V.I.S. — ATUALIZAÇÃO COM IA E HOLOGRAMA
+
+Arquivos: index.html, server.js, package.json e este guia.
+
+O que foi adicionado:
+- IA conversacional Gemini no servidor.
+- Tratamento por “senhor”, sem palavrões e sem conteúdo adulto explícito.
+- Expressão pensativa com o rosto virado para o lado.
+- Painel holográfico para resumir ideias e sugestões.
+- Integração de voz Fish Audio (Jarvis UCM) mantida no servidor.
+
+CONFIGURAÇÃO NECESSÁRIA NO RENDER
+Em Render > seu Web Service > Environment, adicione:
+GEMINI_API_KEY = sua chave da API Gemini
+FISH_API_KEY = sua chave Fish Audio (opcional; sem ela usa a voz do navegador)
+
+Nunca coloque essas chaves no HTML ou no GitHub e nunca envie as chaves neste chat.
+O serviço usa Node 18+ e inicia com npm start. Depois de atualizar o GitHub, aguarde o Render terminar o deploy.
+
+Teste: abra SEU-LINK/health. O JSON mostra aiConfigured e fishConfigured como true ou false.
+
+Nota: o plano gratuito do Render pode suspender o serviço quando fica sem uso. A IA e a voz dependem das respectivas chaves e dos limites dos provedores.
